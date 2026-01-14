@@ -11,7 +11,7 @@ source.include_exts = py,kv,txt
 entrypoint = main.py
 
 requirements = python3,kivy
-
+android.accept_sdk_license = True
 android.permissions = WAKE_LOCK
 
 android.api = 33
