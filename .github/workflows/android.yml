@@ -17,13 +17,15 @@ jobs:
         run: |
           docker pull kivy/buildozer:latest
           docker run --rm \
+            --entrypoint /bin/bash \
             -v "$GITHUB_WORKSPACE":/home/user/hostcwd \
             -w /home/user/hostcwd \
             kivy/buildozer:latest \
-            buildozer -v android debug
+            -lc "buildozer -v android debug"
 
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
         with:
           name: padel-score-keeper-apk
           path: bin/*.apk
+```0
