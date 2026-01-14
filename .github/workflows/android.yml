@@ -28,4 +28,3 @@ jobs:
         with:
           name: padel-score-keeper-apk
           path: bin/*.apk
-```0
