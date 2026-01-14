@@ -3,6 +3,7 @@ title = Padel Score Keeper
 package.name = padelscorekeeper
 package.domain = org.flip123
 version = 0.1.0
+android.ndk = 25b
 
 source.dir = .
 source.include_exts = py,kv,txt
